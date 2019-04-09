@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gibbed.Unreflect.Core", "projects\unreflect\Gibbed.Unreflect.Core\Gibbed.Unreflect.Core.csproj", "{5CB232F6-6E10-4D06-83B6-8238895ED36F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gibbed.Unreflect.Runtime", "projects\unreflect\Gibbed.Unreflect.Runtime\Gibbed.Unreflect.Runtime.csproj", "{78358FEB-E627-490E-8701-3C5DBE2D72FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unreflect", "Unreflect", "{7F29E410-7332-4628-AF33-B1DC2FCFFE20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dumpers", "Dumpers", "{AC56FF96-28E0-49D4-9869-F1159D0FCF32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DumpItems", "projects\DumpItems\DumpItems.csproj", "{19FA4343-9909-4885-832F-2D2875F54264}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BorderlandsEnhancedDatamining", "projects\BorderlandsEnhancedDatamining\BorderlandsEnhancedDatamining.csproj", "{3E2F2EC6-F71F-4F39-9A29-2CF32F650BE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DumpPlayerClasses", "projects\DumpPlayerClasses\DumpPlayerClasses.csproj", "{A79AE0F5-41CF-4AF9-81EA-A06E8A707B2F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DumpEmergencyTeleportOutposts", "projects\DumpEmergencyTeleportOutposts\DumpEmergencyTeleportOutposts.csproj", "{122F6A34-B6AB-46F7-81D9-D5D441E00F59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CB232F6-6E10-4D06-83B6-8238895ED36F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5CB232F6-6E10-4D06-83B6-8238895ED36F}.Debug|x64.Build.0 = Debug|Any CPU
+		{5CB232F6-6E10-4D06-83B6-8238895ED36F}.Release|x64.ActiveCfg = Release|Any CPU
+		{78358FEB-E627-490E-8701-3C5DBE2D72FA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{78358FEB-E627-490E-8701-3C5DBE2D72FA}.Debug|x64.Build.0 = Debug|Any CPU
+		{78358FEB-E627-490E-8701-3C5DBE2D72FA}.Release|x64.ActiveCfg = Release|Any CPU
+		{19FA4343-9909-4885-832F-2D2875F54264}.Debug|x64.ActiveCfg = Debug|x64
+		{19FA4343-9909-4885-832F-2D2875F54264}.Debug|x64.Build.0 = Debug|x64
+		{19FA4343-9909-4885-832F-2D2875F54264}.Release|x64.ActiveCfg = Release|x64
+		{19FA4343-9909-4885-832F-2D2875F54264}.Release|x64.Build.0 = Release|x64
+		{3E2F2EC6-F71F-4F39-9A29-2CF32F650BE3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3E2F2EC6-F71F-4F39-9A29-2CF32F650BE3}.Debug|x64.Build.0 = Debug|Any CPU
+		{3E2F2EC6-F71F-4F39-9A29-2CF32F650BE3}.Release|x64.ActiveCfg = Release|Any CPU
+		{A79AE0F5-41CF-4AF9-81EA-A06E8A707B2F}.Debug|x64.ActiveCfg = Debug|x64
+		{A79AE0F5-41CF-4AF9-81EA-A06E8A707B2F}.Debug|x64.Build.0 = Debug|x64
+		{A79AE0F5-41CF-4AF9-81EA-A06E8A707B2F}.Release|x64.ActiveCfg = Release|x64
+		{A79AE0F5-41CF-4AF9-81EA-A06E8A707B2F}.Release|x64.Build.0 = Release|x64
+		{122F6A34-B6AB-46F7-81D9-D5D441E00F59}.Debug|x64.ActiveCfg = Debug|x64
+		{122F6A34-B6AB-46F7-81D9-D5D441E00F59}.Debug|x64.Build.0 = Debug|x64
+		{122F6A34-B6AB-46F7-81D9-D5D441E00F59}.Release|x64.ActiveCfg = Release|x64
+		{122F6A34-B6AB-46F7-81D9-D5D441E00F59}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5CB232F6-6E10-4D06-83B6-8238895ED36F} = {7F29E410-7332-4628-AF33-B1DC2FCFFE20}
+		{78358FEB-E627-490E-8701-3C5DBE2D72FA} = {7F29E410-7332-4628-AF33-B1DC2FCFFE20}
+		{19FA4343-9909-4885-832F-2D2875F54264} = {AC56FF96-28E0-49D4-9869-F1159D0FCF32}
+		{A79AE0F5-41CF-4AF9-81EA-A06E8A707B2F} = {AC56FF96-28E0-49D4-9869-F1159D0FCF32}
+		{122F6A34-B6AB-46F7-81D9-D5D441E00F59} = {AC56FF96-28E0-49D4-9869-F1159D0FCF32}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A52EC2A2-EAFC-4D64-B197-FF18C05EA7A5}
+	EndGlobalSection
+EndGlobal
