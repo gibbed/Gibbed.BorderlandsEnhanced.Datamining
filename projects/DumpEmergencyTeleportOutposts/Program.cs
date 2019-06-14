@@ -27,7 +27,7 @@ using Gibbed.Unreflect.Core;
 using Newtonsoft.Json;
 using Dataminer = BorderlandsEnhancedDatamining.Dataminer;
 
-namespace DumpTravelStations
+namespace DumpEmergencyTeleportOutposts
 {
     internal class Program
     {

@@ -20,7 +20,7 @@
  *    distribution.
  */
 
-namespace DumpTravelStations
+namespace DumpEmergencyTeleportOutposts
 {
     internal enum MissionStatus
     {
