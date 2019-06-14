@@ -22,11 +22,10 @@
 
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
 using Gibbed.Unreflect.Core;
 using Newtonsoft.Json;
+using Dataminer = BorderlandsEnhancedDatamining.Dataminer;
 
 namespace DumpTravelStations
 {
@@ -34,7 +33,7 @@ namespace DumpTravelStations
     {
         private static void Main(string[] args)
         {
-            new BorderlandsEnhancedDatamining.Dataminer().Run(args, Go);
+            new Dataminer().Run(args, Go);
         }
 
         private static void Go(Engine engine)
@@ -48,8 +47,6 @@ namespace DumpTravelStations
             {
                 throw new InvalidOperationException();
             }
-
-            Directory.CreateDirectory("dumps");
 
             var sourceLookup = new Dictionary<string, string>();
             dynamic willowGlobals = engine.Objects.Single(
@@ -71,7 +68,7 @@ namespace DumpTravelStations
                 sourceLookup.Add(dlcPackage.TeleportLookupObject.GetPath(), dlcPackage.GetPath());
             }
 
-            using (var output = new StreamWriter(Path.Combine("dumps", "Emergency Teleport Outposts.json"), false, Encoding.Unicode))
+            using (var output = Dataminer.NewDump("Emergency Teleport Outposts.json"))
             using (var writer = new JsonTextWriter(output))
             {
                 writer.Indentation = 2;

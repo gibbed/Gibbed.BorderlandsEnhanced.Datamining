@@ -22,11 +22,10 @@
 
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
 using Gibbed.Unreflect.Core;
 using Newtonsoft.Json;
+using Dataminer = BorderlandsEnhancedDatamining.Dataminer;
 
 namespace DumpItems
 {
@@ -34,7 +33,7 @@ namespace DumpItems
     {
         private static void Main(string[] args)
         {
-            new BorderlandsEnhancedDatamining.Dataminer().Run(args, Go);
+            new Dataminer().Run(args, Go);
         }
 
         private static void Go(Engine engine)
@@ -131,9 +130,7 @@ namespace DumpItems
                 }
             }
 
-            Directory.CreateDirectory("dumps");
-
-            using (var output = new StreamWriter(Path.Combine("dumps", "Weapon Types.json"), false, Encoding.Unicode))
+            using (var output = Dataminer.NewDump("Weapon Types.json"))
             using (var writer = new JsonTextWriter(output))
             {
                 writer.Indentation = 2;
@@ -205,7 +202,7 @@ namespace DumpItems
                 writer.WriteEndObject();
             }
 
-            using (var output = new StreamWriter(Path.Combine("dumps", "Item Types.json"), false, Encoding.Unicode))
+            using (var output = Dataminer.NewDump("Item Types.json"))
             using (var writer = new JsonTextWriter(output))
             {
                 writer.Indentation = 2;

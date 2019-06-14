@@ -21,8 +21,11 @@
  */
 
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
+using System.Text;
 using Gibbed.Unreflect.Core;
 using Gibbed.Unreflect.Runtime;
 
@@ -30,6 +33,15 @@ namespace BorderlandsEnhancedDatamining
 {
     public class Dataminer
     {
+        public static TextWriter NewDump(params string[] paths)
+        {
+            Directory.CreateDirectory("dumps");
+            var fullPaths = new List<string>();
+            fullPaths.Add("dumps");
+            fullPaths.AddRange(paths);
+            return new StreamWriter(Path.Combine(fullPaths.ToArray()), false, Encoding.UTF8);
+        }
+
         private Process FindSuitableProcess(out string config)
         {
             var processes = Process.GetProcessesByName("borderlandsgoty");
