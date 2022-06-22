@@ -10,7 +10,7 @@
     <None Remove="Resources\0.json" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Unreflect\Gibbed.Unreflect.Core\Gibbed.Unreflect.Core.csproj" />
